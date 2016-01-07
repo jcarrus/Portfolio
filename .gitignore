@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files
+!simple-portfolio-example.html
+!simple-style.css
+!simple-script.js
+!notes.txt
+!.gitignore

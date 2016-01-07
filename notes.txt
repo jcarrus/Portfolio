@@ -1,0 +1,1 @@
+All images must have a height of 640px, which is twice the height of the div. This is for retina displays
