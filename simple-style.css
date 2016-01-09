@@ -22,10 +22,6 @@ body {
     width: 100%;
 }
 
-.bold {
-    font-weight: 400;
-}
-
 .light {
     font-weight: 100;
 }
@@ -49,6 +45,7 @@ a.email {
     width: 50%;
     float: left;
     font-size: 72px;
+    cursor: default;
 }
 
 .title.left {
@@ -80,7 +77,7 @@ a.email {
 
 .tile-container {
     background-color: #f9f9f9;
-    margin: 5px;
+    margin: 5px 5px 0 5px;
 }
 
 .tile-pic {
@@ -189,7 +186,7 @@ div.image.large {
 
 a.back {
     font-family: Roboto, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     display: block;
     width: 100%;
     clear: both;
@@ -204,3 +201,9 @@ a.back {
     display:none;
 }
 
+h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    margin-top: 10px;
+}

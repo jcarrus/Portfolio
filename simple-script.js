@@ -10,54 +10,46 @@ function mouseout(el){
     }
 }
 
-var transitioning = false;
-function showInfo(el){
+var transitioning = 0;
+
+function goto(id){
     // don't do anything if we are mid transition
-    if (transitioning) return;
-
-    // set the transitioning flag
-    transitioning = true;
+    if (transitioning > 0) return;
     
-    // get the tiles and make hidden
-    var tiles = document.getElementsByClassName("tile");
-    for (var i = 0; i < tiles.length; i++){
-	tiles[i].classList.remove("mouseon");
-	tiles[i].classList.add("hidden");
+    // hide all shown elements
+    var tohide = document.getElementsByClassName("shown");
+    while (tohide.length > 0){
+	hide(tohide[0]);
     }
-
-    // remove tiles after transition
-    setTimeout(function(){
-	for (var i = 0; i < tiles.length; i++){
-	    tiles[i].classList.add("noDisplay");
-	}
-	// reset the transitioning flag
-	transitioning = false;
-    }, 300);
     
-    // show the detailed information page
-    el.parentElement.getElementsByClassName("info")[0].classList.remove("noDisplay");
+    if (id == "main"){
+	// show the tiles
+	var tiles = document.getElementsByClassName("tile");
+	for (var i = 0; i < tiles.length; i++){
+	    show(tiles[i]);
+	}
+    } else {
+	// show the detailed information page
+	show(document.getElementById(id));
+    }
+}
+
+function show(el){
+    transitioning++;
+    el.classList.remove("noDisplay");
+    el.classList.add("shown");
     setTimeout(function(){
-	el.parentElement.getElementsByClassName("info")[0].classList.remove("hidden");
+	el.classList.remove("hidden");
+	transitioning--;
     }, 10);
 }
 
-function hideInfo(el){
-    transitioning = true;
-    
-    // hide the detailed information page
-    el.parentElement.classList.add("hidden");
+function hide(el){
+    transitioning++;
+    el.classList.remove("shown", "mouseon");
+    el.classList.add("hidden");
     setTimeout(function(){
-	el.parentElement.classList.add("noDisplay");
-	transitioning = false;
+	el.classList.add("noDisplay");
+	transitioning--;
     }, 300);
-
-    // show the tiles
-    var tiles = document.getElementsByClassName("tile");
-    for (var i = 0; i < tiles.length; i++){
-	tiles[i].classList.remove("noDisplay");
-    }
-    setTimeout(function(){
-	for (var i = 0; i < tiles.length; i++){
-	    tiles[i].classList.remove("hidden");
-	}}, 10);
 }

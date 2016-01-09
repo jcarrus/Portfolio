@@ -12,10 +12,10 @@
 <body>
   <!-- Head -->
   <div class="container head">
-    <div class="title left">
+    <div onclick="goto('main');" class="title left">
       Justin
     </div>
-    <div class="title right">
+    <div onclick="goto('main');" class="title right">
       Carrus<a class="email" href="mailto:jcarrus@mit.edu">jcarrus@mit.edu</a>
     </div>
     <div>
@@ -31,7 +31,7 @@
       <!-- Begin Entry -->
       <div class="entry">
 	<!-- Tile -->
-	<div class="tile small" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="showInfo(this)">
+	<div class="tile shown small" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="goto('key1');">
 	  <div class="tile-container">
 	    <div class="tile-pic" >
 	      <img class="tile-pic" src="images/img.png"/>
@@ -42,8 +42,8 @@
 	  </div>
 	</div>
 	<!-- Info -->
-	<div class="info hidden noDisplay">
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	<div id="key1" class="info hidden noDisplay">
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	  <br/>
 	  <!-- Begin Content -->
 	  <div class="large image">
@@ -68,7 +68,7 @@
 	  </p>
 	  <!--  End Content  -->
 	  <br/>
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	</div>
       </div>
       <!-- End Entry -->
@@ -76,7 +76,7 @@
       <!-- Begin Entry -->
       <div class="entry">
 	<!-- Tile -->
-	<div class="tile medium" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="showInfo(this)">
+	<div class="tile shown medium" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="goto('key2');">
 	  <div class="tile-container">
 	    <div class="tile-pic" >
 	      <img class="tile-pic" src="images/img.png"/>
@@ -87,13 +87,13 @@
 	  </div>
 	</div>
 	<!-- Info -->
-	<div class="info hidden noDisplay">
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	<div id="key2" class="info hidden noDisplay">
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	  <br/>
 	  <!-- Begin Content -->
 	  <!--  End Content  -->
 	  <br/>
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	</div>
       </div>
       <!-- End Entry -->
@@ -104,7 +104,7 @@
       <!-- Begin Entry -->
       <div class="entry">
 	<!-- Tile -->
-	<div class="tile medium" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="showInfo(this)">
+	<div class="tile shown medium" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="goto('key3');">
 	  <div class="tile-container">
 	    <div class="tile-pic" >
 	      <img class="tile-pic" src="images/img.png"/>
@@ -115,13 +115,13 @@
 	  </div>
 	</div>
 	<!-- Info -->
-	<div class="info hidden noDisplay">
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	<div id="key3" class="info hidden noDisplay">
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	  <br/>
 	  <!-- Begin Content -->
 	  <!--  End Content  -->
 	  <br/>
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	</div>
       </div>
       <!-- End Entry -->
@@ -129,7 +129,7 @@
       <!-- Begin Entry -->
       <div class="entry">
 	<!-- Tile -->
-	<div class="tile small" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="showInfo(this)">
+	<div class="tile shown small" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="goto('key4');">
 	  <div class="tile-container">
 	    <div class="tile-pic" >
 	      <img class="tile-pic" src="images/img.png"/>
@@ -140,13 +140,13 @@
 	  </div>
 	</div>
 	<!-- Info -->
-	<div class="info hidden noDisplay">
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	<div id="key4" class="info hidden noDisplay">
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	  <br/>
 	  <!-- Begin Content -->
 	  <!--  End Content  -->
 	  <br/>
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	</div>
       </div>
       <!-- End Entry -->
@@ -157,7 +157,7 @@
       <!-- Begin Entry -->
       <div class="entry">
 	<!-- Tile -->
-	<div class="tile large" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="showInfo(this)">
+	<div class="tile shown large" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="goto('key5');">
 	  <div class="tile-container">
 	    <div class="tile-pic" >
 	      <img class="tile-pic" src="images/img.png"/>
@@ -168,13 +168,13 @@
 	  </div>
 	</div>
 	<!-- Info -->
-	<div class="info hidden noDisplay">
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	<div id="key5" class="info hidden noDisplay">
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	  <br/>
 	  <!-- Begin Content -->
 	  <!--  End Content  -->
 	  <br/>
-	  <a class="back" onclick="hideInfo(this)">&lt Back</a>
+	  <a class="back" onclick="goto('main');">&lt Back</a>
 	</div>
       </div>
       <!-- End Entry -->
