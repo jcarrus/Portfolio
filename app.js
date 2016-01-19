@@ -1,3 +1,5 @@
+var isLocal = false;
+
 var express = require('express');
 var fs = require('fs');
 var stylus = require('stylus');
@@ -69,7 +71,10 @@ app.get('/budget', function(req, res){
 // Freshman stalking app
 //app.use('/rush', require('./freshman-stalking/rushWeek/app').app);
 
-app.listen(3000, function() {
-    console.log('listening on 3000');
-});
-//module.exports = app;
+if (isLocal){
+    app.listen(3000, function() {
+	console.log('listening on 3000');
+    });
+} else {
+    module.exports = app;
+}
