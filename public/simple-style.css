@@ -183,6 +183,10 @@ a.tile, a.title, a.back{
     text-decoration: none;
 }
 
+a.tile:hover {
+    opacity: 0.5;
+}
+
 a.back {
     font-family: Roboto, sans-serif;
     font-weight: 300;
