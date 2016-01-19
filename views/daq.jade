@@ -1,0 +1,24 @@
+extends ./template.jade
+block content
+  .info-container
+    a.back(href='/') &lt Back
+    br
+    h3 Formula SAE Data Acquisition
+    .large.image
+      img(src='/public/DAQ.jpg')
+    p
+      | The process of validation and optimization is powered by information, and the tuning of a Formula SAE race car is no different. To better understand our car's behavior during testing, the team needed real-time data. The goal of the project was to develop an architecture for data acquision that could be retrofit into previous as well as integrated into future vehicles.
+    p
+      | I developed a system with three main components: an array of arduino-controlled sensors, a modified xBee Pro radio module, and a Python script to collect data and display it in real time. Information flows from both the sensors—thermocouples, accelerometers, a GPS to name a few—and the car's internal monitoring systems—embedded thermistors, driver inputs, and battery monitoring systems—to the arduino. The information then is transmitted using xBee's RF protocol to a laptop running a small Python script that displays the data in real time and logs the data for later analysis.
+    p
+      | A proof-of-concept system, developed over a few weekends in the fall semester, worked effectively during the fall testing period, proving that the system provides a robust solution to data acquision. During the winter, the proof-of-concept proto-board system is making the transition to a PCB with a waterproof enclosure and the data processing is moving from Python to a Javascript based Chrome Application. This move allows for simpler cross-platform support and easy visualization with D3.js.
+    p
+      | For another proof-of-concept sensor box, check out the 
+      a(href='/infocycle') InfoCycle
+      |  or the 
+      a(href='/charcoal') Charcoal Sensor
+      | . For some more code with D3.js, check out the 
+      a(href='/tracksim') Track Simulation
+      | .
+    br
+    a.back(href='/') &lt Back

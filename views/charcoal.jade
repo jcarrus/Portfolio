@@ -1,0 +1,32 @@
+extends ./template.jade
+block content
+  .info-container
+    a.back(href='/') &lt Back
+    br
+    h3 Charcoal Sensor
+    .large.image
+      img(width='1200px', src='/public/charcoal-explode-wide-web.png')
+    p
+      | More than 1.5 million people—mostly women and children—die each year from respiratory infections caused by breathing smoke from indoor cooking fires. MIT's D-Lab has pioneered a process by which dirty, smoky cooking fuels can be turned into clean-burning charcoal. This has the potential to improve the lives of the more than 2 billion people who use wood, charcoal, dung, or agricultural resudiue as a primary cooking and heating fuel. (More information can be found 
+      a(href='https://d-lab.mit.edu/sites/default/files/Charcoal_BG.pdf') here
+      | .)
+    .image.left
+      img(height='400px', src='/public/charcoal-setup-web.jpg')
+    p
+      | As D-Lab and it's partners continue to innovate with charcoal cooking fuels, it is important to evaluate one charcoal against another. Over the past year, I have developed a 45 minute test that uses a single briquette (~15g of charcoal) to determine two quantities that describe the charcoal—energy density (kJ/g) and a time constant (s). The energy density of the charcoal is a measure of how much energy is stored in a single gram of charcoal. The time constant is a measure of how the charcoal burns; a small time constant indicates a fast burning charcoal whereas a large time constant indicates a slow burning charcoal. My test replaces the current standard water boil test that requires 3 hours of time and 10 times more cooking fuel.
+    .image.right
+      img(height='400px', src='/public/charcoal-simple-web.png')
+    p
+      | For use in the field, I also designed a small sensor box to collect data for the test and calculate the required values. Internally, an ATmega328 guides the user through the test with the LCD while taking readings from a temperature probe. Thanks to processor sleep optimizations, the sensor box can run for about 100 hours on a single AA battery.
+    p
+      | A laser cut enclosure protects the electronics from the elements. The enclosure consists of 13 pieces and features standoffs for the LCD, proto-board holes for the arduino to mount to 0.1" headers, and a sliding back panel for access to the battery compartment with storage for a small piece of paper describing the test.
+    p
+      | Three sensor boxes were built for user testing with charcoal producers in Uganda. They arrived in country on January 4, 2016.
+    p
+      | For another sensor project, check out the 
+      a(href='/infocycle') InfoCycle
+      |  or the 
+      a(href='/daq') FSAE DAQ
+      | .
+    br
+    a.back(href='/') &lt Back

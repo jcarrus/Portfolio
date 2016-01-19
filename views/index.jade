@@ -1,0 +1,54 @@
+extends ./template.jade
+block content
+  .row
+    a.tile.medium(href='/about' onmouseover='mouseover(this)', onmouseout='mouseout(this)')
+      .tile-container
+        .tile-pic
+          img.tile-pic(src='/public/justin-tile-web.jpg')
+        .tile-cap
+          | About Me
+    a.tile.small(href='/resume' onmouseover='mouseover(this)', onmouseout='mouseout(this)')
+      .tile-container
+        .tile-pic
+          img.tile-pic(src='/public/resume-tile-web.png')
+        .tile-cap
+          | Resume
+  .row
+    a.tile.small(href='/daq' onmouseover='mouseover(this)', onmouseout='mouseout(this)')
+      .tile-container
+        .tile-pic
+          img.tile-pic(src='/public/img.png')
+        .tile-cap
+          | FSAE DAQ
+    a.tile.medium(href='/infocycle' onmouseover='mouseover(this)', onmouseout='mouseout(this)')
+      .tile-container
+        .tile-pic
+          img.tile-pic(src='/public/infocycle-fork-tile.jpg')
+        .tile-cap
+          | Infocycle
+  .row
+    a.tile.medium(href='/rockers' onmouseover='mouseover(this)', onmouseout='mouseout(this)')
+      .tile-container
+        .tile-pic
+          img.tile-pic(src='/public/rockers-waterjet-tile.jpg')
+        .tile-cap
+          | Rockers and ARB
+    a.tile.small(href='/tracksim' onmouseover='mouseover(this)', onmouseout='mouseout(this)')
+      .tile-container
+        .tile-pic
+          img.tile-pic(src='/public/tracksim-tile.png')
+        .tile-cap
+          | Track Sim
+  .row
+    a.tile.small(href='/cad' onmouseover='mouseover(this)', onmouseout='mouseout(this)')
+      .tile-container
+        .tile-pic
+          img.tile-pic(src='/public/elephant-tile-web.png')
+        .tile-cap
+          | CAD
+    a.tile.medium(href='/charcoal' onmouseover='mouseover(this)', onmouseout='mouseout(this)')
+      .tile-container
+        .tile-pic
+          img.tile-pic(src='/public/charcoal-explode-tile-web.png')
+        .tile-cap
+          | Charcoal Sensor

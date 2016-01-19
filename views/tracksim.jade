@@ -1,0 +1,18 @@
+extends ./template.jade
+block content
+  .info-container
+    a.back(href='/') &lt Back
+    br
+    h3 Javascript Track Simulation (Chrysler-SRT)
+    .large.image
+      img(width='1166px', src='/public/tracksim-header-web.png')
+    p
+      | One of the tasks during my time at SRT was to run track simulations for future vehicles. At the time, the group was using an internally developed Excel macro. This was not only difficult to use but was also slow as thousands of rows in the spreadsheet had to be updated.
+    p
+      | I rewrote the entire simulation to run in a browser. With some optimizations in the simulation strategy, the simulation ran 10 times faster than the previoius Excel-based simulation. Additionally, I created an integrated plotting tool for quick comparison between simulations. In the image, you can see a comparison between the simulation's estimated car velocity (blue line) and actual track data from the same vehicle on the same track (pink line). The track velocity data was not part of the training set.
+    p
+      | For more track day excitement, check out the 
+      a(href='/daq') FSAE DAQ
+      | .
+      br
+      a.back(href='/') &lt Back

@@ -1,0 +1,200 @@
+body {
+    width: 100%;
+    color: #000;
+    font-family: Merriweather, serif;
+    font-weight: 300;
+    text-align: justify;
+    overflow-y: scroll;
+    max-width: 1200px;
+    min-width: 430px;
+    margin: auto;
+}
+
+
+.container {
+    width: 100%;
+    padding: 0;
+    /*position: relative;*/
+    display: inline-block;
+}
+
+.row {
+    margin: 0 12px;
+}
+
+.light {
+    font-weight: 100;
+}
+
+a.email {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+    float: right;
+    position: relative;
+    top: 0;
+    right: 17px;
+}
+
+.head {
+    font-family: Roboto, sans-serif;
+}
+
+.title {
+    margin: 48px 0 48px 0;
+    width: 50%;
+    float: left;
+    font-size: 72px;
+    cursor: default;
+}
+
+.title.left {
+    text-align: right;
+    font-weight: 100;
+}
+
+.title.right {
+    text-align: left;
+    font-weight: 400;
+}
+
+.tile {
+    float: left;
+    transition-duration: 300ms;
+}
+
+.tile-cap {
+    padding: 12px 24px 12px 24px;
+    font-size: 36px;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    background: #eeeeee; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ccc, #eee); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#eee, #f9f9f9); /* Standard syntax */
+}
+
+.tile-container {
+    background-color: #f9f9f9;
+    margin: 5px;
+}
+
+.tile-pic {
+    margin: 0;
+    text-align: center;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+img.tile-pic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translatey(-50%) translateX(-50%);
+    -webkit-transform: translatey(-50%) translateX(-50%);
+    -moz-transform: translatey(-50%) translateX(-50%);
+    -ms-transform: translatey(-50%) translateX(-50%);
+}
+
+.tile.small {
+    width: 33.333%;
+}
+
+.tile.medium {
+    width: 66.666%;
+}
+
+.tile.large {
+    width: 99.999%;
+}
+
+.tile.half {
+    width: 49.999%;
+}
+
+@media (max-width: 768px) {
+    .tile.small {
+	width: 99.999%;
+    }
+    .tile.medium {
+	width: 99.999%;
+    }
+    .tile.large {
+	width: 99.999%;
+    }
+    .tile.half {
+	width: 99.999%;
+    }
+    div.image {
+	width: 99.999%;
+    }
+    div.image.left, div.image.right {
+	width: 100%;
+	margin: 0;
+    }
+}
+
+.tile.mouseon {
+    opacity: .8;
+}
+
+.info {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 430px;
+    position: absolute;
+    top: 180px;
+    transition-duration: 300ms;
+    left: 0;
+}
+
+.info-container {
+    margin: 0 17px;
+}
+
+.info-title {
+    font-size: 48px;
+    display: block;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+
+div.image.right {
+    float: right;
+    margin: 20px 0 20px 20px;
+}
+
+div.image.left {
+    float: left;
+    margin: 20px 20px 20px 0;
+}
+
+div.image.large {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+a.tile, a.title, a.back{
+    color: black;
+    text-decoration: none;
+}
+
+a.back {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    color: #000;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    margin-top: 10px;
+}
