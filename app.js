@@ -56,13 +56,6 @@ app.get('/charcoal', function(req, res){
     res.render('charcoal', {});
 });
 
-// Simple Portfolio
-app.get('/simple', function(req, res){
-    console.log("sending simple");
-    res.sendFile(__dirname + '/simple-portfolio.html');
-});
-
-
 // Budget Application
 app.get('/budget', function(req, res){
     res.sendFile(__dirname + '/views/Budget.html');
