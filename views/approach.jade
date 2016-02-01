@@ -1,0 +1,31 @@
+extends ./template.jade
+block content
+  .info-container
+    a.back(href='/') &lt Back
+    br
+    h3 Work Mentality and Approach
+    .image.left
+      img(height='320px', src='/public/elephant-web.png')
+    p
+      | I've always been thoughtful about how I work. It's not enough to create an elegant solution if the process itself is not also elegant. I'm constantly searching for new approaches, methods, and tools to bring simplicity, repeatability, and transparency to the design process. This is a large part of who I am in the workplace, and I am looking for a group of people that share my desire to not only be thoughtful about design, but also   
+      i how
+      | to design.
+    p
+      | The collection of projects on this site are not exhaustive. Rather, they show how I've approached problems in the past, in various contexts. Never have I been asked to make something more transparent, repeatable, or simple, though this, I believe, has made all the difference.
+    p
+      a(href='/daq') Data Acquisition
+      |  has been a "to do" on the FSAE team for five years now. Always getting bumped due to the complexity of integrating so many components, I restarted the design process this year with a goal of keeping things simple. Leveraging technologies that already existed, I added remote data logging to the car in less than one week. The arduino-based sensor box is familiar to the mechanical and electrical engineers on the team, and working in the browser is nothing new to the computer science students. Most importantly, the simplicity pushed towards a MVP as quickly as possible. Seeing the prototype work stirred interest and continues to fuel the project today. The process was simple.
+    p
+      | Design time for the 
+      a(href='/rockers') FSAE Rockers and Anti-Roll Bars
+      |  has decreased by an order of magnitude. Last year, I drove every bit of modeling from a single master sketch. The CAD, FEA, and CAM were all created as derived parts and assemblies. Even the master sketch itself was a derived part that directly referenced the original suspension points. A change at any part of the design would immediately propagate. The only human input is to press run on the FEA and check the factor of safety. This year's rocker design took 45 minutes to fix the suspension sketch reference and double check the FoS. The design process was repeatable.
+    p
+      | Migrating the 
+      a(href='/tracksim') Track Simulation
+      |  from Excel to JavaScript saw a huge performance increase, but perhaps more importantly, the transition increased the transparency of the tool. Alerts and messages warn the user of possible mishaps and comments and descriptive variable names guide future developers through the algorithm. While the Excel-based simulation had been around for more than a decade, members of my group were discussing all of the potential new applications of a simulation they could use and modify. The process was transparent.
+    p
+      | Of course, these values are easy to talk about and generally agreeable. The risk comes when we must try new tools to keep things simple, repeatable, and transparent. My sophomore year I traveled to Botswana with MIT's D-Lab. As a gift for my trip leader, I made the elephant (pictured) in Fusion360, a new CAD/CAM solution from Autodesk. I was intrigued by the sculpting tools, and saw this project as an investment in learning a new tool. I want to work with people who share this approach and are not afraid to take risks and try new tools.
+    p
+      | The gift itself was this model, split into horizontal layers and laser cut out of MDF.
+    br
+    a.back(href='/') &lt Back

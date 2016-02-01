@@ -49,8 +49,8 @@ app.get('/rockers', function(req, res){
 app.get('/tracksim', function(req, res){
     res.render('tracksim', {});
 });
-app.get('/cad', function(req, res){
-    res.render('cad', {});
+app.get('/approach', function(req, res){
+    res.render('approach', {});
 });
 app.get('/charcoal', function(req, res){
     res.render('charcoal', {});
