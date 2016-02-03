@@ -7,9 +7,9 @@ block content
     .large.image
       img(width='1166px', src='/public/tracksim-header-web.png')
     p
-      | One of the tasks during my time at SRT was to run track simulations for future vehicles. At the time, the group was using an internally developed Excel macro. This was not only difficult to use but was also slow as thousands of rows in the spreadsheet had to be updated.
+      | One of the tasks during my time at SRT was to run track simulations for future vehicles. At the time, the group was using an internally developed Excel macro. This was not only difficult to use but was also slow as thousands of rows in the spreadsheet had to be updated with each iteration.
     p
-      | I rewrote the entire simulation to run in a browser. With some optimizations in the simulation strategy, the simulation ran 10 times faster than the previous Excel-based simulation. Additionally, I created an integrated plotting tool for quick comparison between simulations. In the image, you can see a comparison between the simulation's estimated car velocity (blue line) and actual track data from the same vehicle on the same track (pink line). The track velocity data was not part of the training set.
+      | I rewrote the entire simulation to run in the browser. With some optimizations in the simulation strategy, the simulation ran 10 times faster than the previous Excel-based simulation. Additionally, I created an integrated plotting tool for quick comparison between simulations. Users can visualize any of 17 different vehicle metrics as a function of time or distance, as well as compare to real data collected on the track. New tracks can be "mapped" by simply feeding the simulation a raw file from the car's data acquisition system. Vehicles for the simulation are characterized by more than 50 different parameters. This tool was used for both validation of current and future vehicles and drivetrains.
     p
       | For more track day excitement, check out the 
       a(href='/daq') FSAE DAQ

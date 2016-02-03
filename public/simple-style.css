@@ -33,7 +33,7 @@ a.email {
     text-decoration: none;
     float: right;
     position: relative;
-    top: 0;
+    top: -150px;
     right: 17px;
 }
 
