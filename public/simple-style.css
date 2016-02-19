@@ -10,6 +10,12 @@ body {
     margin: auto;
 }
 
+h3 {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    margin-top: 10px;
+}
 
 .container {
     width: 100%;
@@ -115,28 +121,6 @@ img.tile-pic {
     width: 49.999%;
 }
 
-@media (max-width: 768px) {
-    .tile.small {
-	width: 99.999%;
-    }
-    .tile.medium {
-	width: 99.999%;
-    }
-    .tile.large {
-	width: 99.999%;
-    }
-    .tile.half {
-	width: 99.999%;
-    }
-    div.image {
-	width: 99.999%;
-    }
-    div.image.left, div.image.right {
-	width: 100%;
-	margin: 0;
-    }
-}
-
 .tile.mouseon {
     opacity: .8;
 }
@@ -161,7 +145,6 @@ img.tile-pic {
     width: 100%;
     font-family: Roboto, sans-serif;
 }
-
 
 div.image.right {
     float: right;
@@ -197,22 +180,24 @@ a.back {
     clear: both;
 }
 
-h3 {
-    font-family: Lato, sans-serif;
-    font-weight: 300;
-    font-size: 36px;
-    margin-top: 10px;
-}
-
-@media printont{
-    @page {
-	margin: 1cm;
+@media (max-width: 768px) {
+    .tile.small {
+	width: 99.999%;
     }
-    body{
-	transform: scale(.6) translateY(-120px);
+    .tile.medium {
+	width: 99.999%;
     }
-    .head, a.back {
-	display: none;
+    .tile.large {
+	width: 99.999%;
     }
-    
+    .tile.half {
+	width: 99.999%;
+    }
+    div.image {
+	width: 99.999%;
+    }
+    div.image.left, div.image.right {
+	width: 100%;
+	margin: 0;
+    }
 }
