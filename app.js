@@ -30,7 +30,7 @@ app.use(function(req, res, next){
 	    console.log(str);
 	    str += '\n';
 	    fs.appendFile(__dirname + '/portfolio.log', str, function(err){
-		if (err) throw err;
+		if (err) console.log(err);
 	    });
 	} else {
 	    try{
@@ -62,11 +62,11 @@ app.get('/resume', function(req, res){
 
 app.get('/(:page)?', function(req, res){
     if (!req.params.page){
-	res.render('index', {});
+	return res.render('index', {});
     }
     res.render(req.params.page, {}, function(err, html){
 	if(err){
-	    res.send("404 Page not found", 404);
+	    return res.status(404).send("404 Page not found");
 	}
 	res.send(html);
     });
