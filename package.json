@@ -8,7 +8,8 @@
     "fs": "~0.0.2",
     "nib": "~1.1.0",
     "stylus": "~0.53.0",
-    "jade": "~1.11.0"
+    "jade": "~1.11.0",
+    "node-where": "~1.0.0"
   },
   "devDependencies": {},
   "scripts": {
