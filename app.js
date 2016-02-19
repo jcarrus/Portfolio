@@ -52,9 +52,6 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use('/public', express.static(__dirname + '/public'));
 
-app.get('/', function(req, res){
-    res.render('index', {});
-});
 app.get('/resume', function(req, res){
     var resume=__dirname + "/public/JustinCarrus.pdf";
     fs.readFile(resume, function (err,data){
@@ -63,26 +60,16 @@ app.get('/resume', function(req, res){
     });
 });
 
-app.get('/about', function(req, res){
-    res.render('about', {});
-});
-app.get('/daq', function(req, res){
-    res.render('daq', {});
-});
-app.get('/infocycle', function(req, res){
-    res.render('infocycle', {});
-});
-app.get('/rockers', function(req, res){
-    res.render('rockers', {});
-});
-app.get('/tracksim', function(req, res){
-    res.render('tracksim', {});
-});
-app.get('/process', function(req, res){
-    res.render('process', {});
-});
-app.get('/charcoal', function(req, res){
-    res.render('charcoal', {});
+app.get('/(:page)?', function(req, res){
+    if (!req.params.page){
+	res.render('index', {});
+    }
+    res.render(req.params.page, {}, function(err, html){
+	if(err){
+	    res.send("404 Page not found", 404);
+	}
+	res.send(html);
+    });
 });
 
 if (isLocal){
